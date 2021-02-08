@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* clock design */
+body {
+  background: #0f1a36;
+}
+
+body .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 70px 100px;
+  background: #0f1a36;
+  border-radius: 20px;
+  box-shadow: 7px 7px 10px rgba(7, 16, 39, 0.7),
+    -7px -7px 10px rgba(42, 52, 75, 0.7);
+  box-sizing: border-box;
+}
+
+.wrapper > p {
+  text-align: right;
+  font-size: 1em;
+  color: #8d99b6;
+}
+
+.wrapper > h1 {
+  font-size: 6em;
+  font-weight: 500;
+  color: #a6b1ce;
+}
+
+.wrapper > ul#WEEKS {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper > ul#WEEKS > li {
+  color: #8d99b6;
+  opacity: 0.2;
+  font-weight: 300;
+}

@@ -27,7 +27,37 @@ body {
   background: #0f1a36;
 }
 
-body .wrapper {
+body .btn_area {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+body .btn_area > button {
+  width: 120px;
+  height: 36px;
+  background: #0f1a36;
+  color: #a6b1ce;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 3px 3px 3px rgba(7, 16, 39, 0.7),
+    -3px -3px 3px rgba(42, 52, 75, 0.7);
+  cursor: pointer;
+}
+
+body .btn_area > button:last-child {
+  margin-left: 20px;
+}
+
+body .btn_area > button.active {
+  box-shadow: inset 3px 3px 3px rgba(7, 16, 39, 0.7),
+    inset -3px -3px 3px rgba(42, 52, 75, 0.7);
+}
+
+body .digital {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -41,13 +71,13 @@ body .wrapper {
   box-sizing: border-box;
 }
 
-.wrapper > p {
+.digital > p {
   text-align: right;
   font-size: 1em;
   color: #8d99b6;
 }
 
-.wrapper > h1 {
+.digital > h1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,25 +86,70 @@ body .wrapper {
   color: #a6b1ce;
 }
 
-.wrapper > h1 > span {
+.digital > h1 > span {
   display: inline-block;
   width: 130px;
   text-align: center;
 }
 
-.wrapper > ul#WEEKS {
+.digital > ul#WEEKS {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.wrapper > ul#WEEKS > li {
+.digital > ul#WEEKS > li {
   color: #8d99b6;
   opacity: 0.2;
   font-weight: 300;
 }
 
-.wrapper > ul#WEEKS > li.on {
+.digital > ul#WEEKS > li.on {
   opacity: 0.7;
   font-weight: 400;
+}
+
+body > .analogue {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  background: #0f1a36;
+  box-shadow: 7px 7px 10px rgba(7, 16, 39, 0.7),
+    -7px -7px 10px rgba(42, 52, 75, 0.7);
+}
+
+.analogue > .clock_hands {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.analogue > .clock_hands > * {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: center bottom;
+  background: #a6b1ce;
+}
+
+.analogue > .clock_hands > #HOUR_HAND {
+  width: 4px;
+  height: 30%;
+}
+
+.analogue > .clock_hands > #MINUTE_HAND {
+  width: 2px;
+  height: 40%;
+}
+
+.analogue > .clock_hands > #SECOND_HAND {
+  width: 1px;
+  height: 45%;
+  opacity: 0.5;
 }

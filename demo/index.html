@@ -8,7 +8,11 @@
     <script src="../clock.js" defer></script>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="btn_area">
+      <button id="DIGITAL_BTN">Digital Clock</button>
+      <button id="ANALOGUE_BTN">Analogue Clock</button>
+    </div>
+    <div class="digital">
       <p id="PERIOD">AM</p>
       <h1>
         <span id="HOURS">00</span>&thinsp;&colon;&thinsp;<span id="MINUTES"
@@ -24,6 +28,13 @@
         <li>FRI</li>
         <li>SAT</li>
       </ul>
+    </div>
+    <div class="analogue">
+      <div class="clock_hands">
+        <div id="HOUR_HAND"></div>
+        <div id="MINUTE_HAND"></div>
+        <div id="SECOND_HAND"></div>
+      </div>
     </div>
   </body>
 </html>

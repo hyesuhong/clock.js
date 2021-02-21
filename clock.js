@@ -1,5 +1,29 @@
 'use strict';
 
+const clockType = Object.freeze({
+  analog: 'analog',
+  digital: 'digital',
+});
+
+class Clock {
+  constructor(type, container) {
+    this.type = type;
+    this.container = document.getElementById(`${container}`);
+  }
+
+  getTime() {
+    setInterval(() => {
+      const today = new Date();
+      const day = today.getDay();
+      const hours = today.getHours();
+      const minutes = today.getMinutes();
+      const seconds = today.getSeconds();
+    }, 1000);
+  }
+
+  insertClock() {}
+}
+
 // Digital time boxes
 const digital_clock_wrap = document.querySelector('.digital');
 const time_period = document.querySelector('#PERIOD');

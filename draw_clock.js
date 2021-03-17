@@ -21,16 +21,16 @@ export class DrawClock {
         wrapper.innerHTML = `
           <p class="digital_meridiem"></p>
           <h1 class="digital_time_text">
-            <span class="digital_hours"></span>&colon;<span class="digital_minutes"></span>&colon;<span class="digital_seconds"></span>
+            <span class="digital_hours digital_time"></span>&colon;<span class="digital_minutes digital_time"></span>&colon;<span class="digital_seconds digital_time"></span>
           </h1>
           <ul class="digital_weeks">
-            <li>SUN</li>
-            <li>MON</li>
-            <li>TUE</li>
-            <li>WED</li>
-            <li>THU</li>
-            <li>FRI</li>
-            <li>SAT</li>
+            <li class="week_text">SUN</li>
+            <li class="week_text">MON</li>
+            <li class="week_text">TUE</li>
+            <li class="week_text">WED</li>
+            <li class="week_text">THU</li>
+            <li class="week_text">FRI</li>
+            <li class="week_text">SAT</li>
           </ul>
         `;
         break;
@@ -40,9 +40,9 @@ export class DrawClock {
 
         wrapper.innerHTML = `
           <div class="analog_clock_hands">
-            <div class="analog_hours"></div>
-            <div class="analog_minutes"></div>
-            <div class="analog_seconds"></div>
+            <div class="clock_hand analog_hours"></div>
+            <div class="clock_hand analog_minutes"></div>
+            <div class="clock_hand analog_seconds"></div>
           </div>
         `;
         break;

@@ -69,45 +69,7 @@ body #DIGITAL_CLOCK {
   box-shadow: 7px 7px 10px rgba(7, 16, 39, 0.7),
     -7px -7px 10px rgba(42, 52, 75, 0.7);
   box-sizing: border-box;
-}
-
-#DIGITAL_CLOCK p {
-  text-align: right;
-  font-size: 1em;
-  color: #8d99b6;
-}
-
-#DIGITAL_CLOCK h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 6em;
-  font-weight: 500;
-  letter-spacing: 8px;
   color: #a6b1ce;
-}
-
-#DIGITAL_CLOCK h1 > span {
-  display: inline-block;
-  width: 130px;
-  text-align: center;
-}
-
-#DIGITAL_CLOCK ul.digital_weeks {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#DIGITAL_CLOCK ul.digital_weeks > li {
-  color: #8d99b6;
-  opacity: 0.2;
-  font-weight: 300;
-}
-
-#DIGITAL_CLOCK ul.digital_weeks > li.on {
-  opacity: 0.7;
-  font-weight: 400;
 }
 
 body > #ANALOGUE_CLOCK {
@@ -122,40 +84,4 @@ body > #ANALOGUE_CLOCK {
   background: #0f1a36;
   box-shadow: 7px 7px 10px rgba(7, 16, 39, 0.7),
     -7px -7px 10px rgba(42, 52, 75, 0.7);
-}
-
-#ANALOGUE_CLOCK > * {
-  width: 100%;
-  height: 100%;
-}
-
-#ANALOGUE_CLOCK .analog_clock_hands {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-#ANALOGUE_CLOCK .analog_clock_hands > * {
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  transform-origin: center bottom;
-  background: #a6b1ce;
-}
-
-#ANALOGUE_CLOCK .analog_clock_hands > .analog_hours {
-  width: 4px;
-  height: 30%;
-}
-
-#ANALOGUE_CLOCK .analog_clock_hands > .analog_minutes {
-  width: 2px;
-  height: 40%;
-}
-
-#ANALOGUE_CLOCK .analog_clock_hands > .analog_seconds {
-  width: 1px;
-  height: 45%;
-  opacity: 0.5;
 }

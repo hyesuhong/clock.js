@@ -1,0 +1,78 @@
+/* digital clock style */
+.digital_wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.digital_wrapper .digital_meridiem {
+  text-align: right;
+  font-size: 1em;
+}
+
+.digital_wrapper .digital_time_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6em;
+  font-weight: 500;
+  letter-spacing: 8px;
+}
+
+.digital_wrapper .digital_time_text .digital_time {
+  display: inline-block;
+  width: 1.4em;
+  text-align: center;
+}
+
+.digital_wrapper .digital_weeks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.digital_wrapper .digital_weeks .week_text {
+  opacity: 0.2;
+  font-weight: 300;
+}
+
+.digital_wrapper .digital_weeks .week_text.on {
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+/* analog clock style */
+.analog_wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.analog_wrapper .analog_clock_hands {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.analog_wrapper .analog_clock_hands .clock_hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: center bottom;
+  background: #a6b1ce;
+}
+
+.analog_wrapper .analog_clock_hands .analog_hours {
+  width: 4px;
+  height: 30%;
+}
+
+.analog_wrapper .analog_clock_hands .analog_minutes {
+  width: 2px;
+  height: 40%;
+}
+
+.analog_wrapper .analog_clock_hands .analog_seconds {
+  width: 1px;
+  height: 45%;
+  opacity: 0.5;
+}

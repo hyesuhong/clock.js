@@ -26,4 +26,4 @@ btn_area.addEventListener('click', (e) => {
   }
 });
 
-document.querySelector('#DIGITAL_BTN').click();
+document.querySelector('#ANALOGUE_BTN').click();

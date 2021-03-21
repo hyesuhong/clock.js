@@ -66,7 +66,16 @@ export default class Clock {
     this.digital_minutes.innerText = this.addZero(this.getTime()[2]);
     this.digital_seconds.innerText = this.addZero(this.getTime()[3]);
 
-    this.digital_weeks.children[this.getTime()[0]].classList.add('on');
+    let weekends = Array.from(this.digital_weeks.children);
+    weekends.forEach(function (element, index) {
+      if (this.getTime()[0] === index) {
+        element.classList.add('on');
+      } else {
+        element.classList.remove('on');
+      }
+    }, this);
+    // this.digital_weeks.children.classList.remove('on');
+    // this.digital_weeks.children[this.getTime()[0]].classList.add('on');
   }
 
   analogClock() {
